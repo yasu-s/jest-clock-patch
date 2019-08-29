@@ -36,9 +36,8 @@
     "testMatch": [
       "**/test/*.+(ts|tsx|js)"
     ],
-    "resetMocks": true,
     "setupFilesAfterEnv": [
-      "./setup-clock-patch.js"
+      "./setup-clock-patch.ts"
     ]
   }
 }

@@ -1,7 +1,9 @@
+import * as mockdate from 'mockdate';
+
 describe('Date', () => {
   it('now', () => {
     // setup
-    jasmine.clock().mockDate(new Date(2019, 1, 1));
+    mockdate.set(new Date(2019, 1, 1));
 
     // exercise
     const actual = Date.now();
@@ -12,20 +14,20 @@ describe('Date', () => {
 
   it('new Date()', () => {
     // setup
-    jasmine.clock().mockDate(new Date(2019, 2, 1));
+    mockdate.set(new Date(2019, 1, 1));
 
     // exercise
     const actual = new Date();
 
     // verify
-    expect(actual.valueOf()).toBe(new Date(2019, 2, 1).valueOf());
+    expect(actual.valueOf()).toBe(new Date(2019, 1, 1).valueOf());
   });
 
-  it('mockDate reset check', () => {
+  it('mockdate reset check', () => {
     // exercise
     const actual = new Date();
 
     // verify
-    expect(actual.valueOf()).not.toBe(new Date(2019, 2, 1).valueOf());
+    expect(actual.valueOf()).not.toBe(new Date(2019, 1, 1).valueOf());
   });
 });

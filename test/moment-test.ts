@@ -1,9 +1,10 @@
 import * as moment from 'moment';
+import * as mockdate from 'mockdate';
 
 describe('moment', () => {
   it('now', () => {
     // setup
-    jasmine.clock().mockDate(new Date(2019, 1, 1));
+    mockdate.set(new Date(2019, 1, 1));
 
     // exercise
     const actual = moment();
