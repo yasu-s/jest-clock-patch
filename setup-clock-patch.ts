@@ -1,14 +1,14 @@
-var mockDate = require('mockdate');
+import * as mockdate from 'mockdate';
 
 // jasmine.clock().mockDate defined
 jasmine.clock = () => {
   return {
     mockDate: (date) => {
-      mockDate.set(date);
+      mockdate.set(date);
     }
-  };
+  } as any;
 };
 
 beforeEach(() => {
-  mockDate.reset();
+  mockdate.reset();
 });
