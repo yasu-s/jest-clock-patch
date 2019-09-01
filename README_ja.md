@@ -1,43 +1,43 @@
-# Overview
+# 概要
 
-* This is a sample extension for using `jasmine.clock().mockDate()` with Jest.
-* This is done using `MockDate`.
-* Values such as `Date.now()`, `new Date()`, and `moment()` are overwritten by `MockDate`.
+* Jest で `jasmine.clock().mockDate()` を使用するための拡張のサンプルです。
+* `mockdate` を使用して実現しています。
+* `Date.now()`・`new Date()`・`moment()` などの値が `mockdate` により上書きされます。
 
-# System requirements
+# 実行環境
 
 * Node.js - 10.x
 * Yarn - 1.12.x
 
-# Used library
+# 使用ライブラリ
 
 * Jest - 24.9.x
 * ts-jest - 24.0.x
 * TypeScript -3.5.x
 * mockdate - 3.5.x
 
-# Operation check
+# 動作確認
 
-## 1. Download sample
+## 1. サンプルのダウンロード
 
 ```
 git clone git@github.com:yasu-s/jest-clock-patch.git
 ```
 
-## 2. Installing packages  
+## 2. パッケージインストール  
 
 ```
 cd jest-clock-patch
 yarn
 ```
 
-## 3. Launch sample application  
+## 3. サンプルの起動  
 
 ```
 yarn test
 ```
 
-# Sample source
+# サンプルソース
 
 ## jest.config.js
 
@@ -123,7 +123,7 @@ describe('Date', () => {
 });
 ```
 
-# Reference
+# 参考URL
 
 * Jest - https://jestjs.io/ja/
 * MockDate - https://www.npmjs.com/package/mockdate
