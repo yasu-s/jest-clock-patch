@@ -18,7 +18,5 @@ jobs:
           ${{ runner.os }}-yarn-
     - name: package install
       run:  yarn
-    - name: lint
-      run:  yarn lint
     - name: test
       run:  yarn test
