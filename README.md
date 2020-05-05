@@ -1,3 +1,5 @@
+![CI](https://github.com/yasu-s/jest-clock-patch/workflows/CI/badge.svg)
+
 # Overview
 
 * This is a sample extension for using `jasmine.clock().mockDate()` with Jest.
